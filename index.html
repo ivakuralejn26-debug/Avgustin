@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Августин Керчь</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-screen="1">
+<main class="app">
+
+  <div class="col">
+    <div class="cell info">
+      <span class="layer s1">08.10.2157</span>
+      <span class="layer s2">Символов: <b id="count">0</b></span>
+    </div>
+    <div class="cell side">
+      <div class="layer s1"><div class="track" data-side="1"></div></div>
+      <div class="layer s2"><div class="track" data-side="2"></div></div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="cell title"><h1>Августин Керчь</h1></div>
+    <div class="cell main">
+      <div class="layer s1"></div>
+      <section class="layer s2 bio-wrap">
+        <h2>Биография</h2>
+        <div class="bio" id="bio" tabindex="0">
+          <p>Здесь будет биография Августина Керча. Текст напишу потом.</p>
+          <p>Блок прокручивается: когда текста станет больше, чем помещается в рамку, справа появится полоса прокрутки.</p>
+          <p>Это временный текст для проверки. Замени его своим в файле index.html, внутри блока с id="bio".</p>
+          <p>Счётчик символов в левом верхнем углу считает именно этот блок.</p>
+          <p>Ещё один абзац, чтобы было что мотать. Ещё один абзац, чтобы было что мотать. Ещё один абзац, чтобы было что мотать.</p>
+          <p>Последний абзац заглушки.</p>
+        </div>
+      </section>
+    </div>
+    <nav class="btns">
+      <button type="button" data-go="1">1</button>
+      <button type="button" data-go="2">2</button>
+      <button type="button" data-go="3">3</button>
+      <button type="button" data-go="4">4</button>
+    </nav>
+  </div>
+
+  <div class="col">
+    <div class="cell photo">
+      <div class="layer s1 ph" data-label="ФОТО 1"><img src="img/photo1.jpg" alt="Августин Керчь" onerror="this.remove()"></div>
+      <div class="layer s2 ph" data-label="ФОТО 2"><img src="img/photo2.jpg" alt="Августин Керчь" onerror="this.remove()"></div>
+    </div>
+    <div class="cell lines">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <rect x="16" y="31.3" width="63.5" height="2.3"/>
+        <rect x="16" y="40.5" width="30" height="2.3"/>
+        <rect x="49.5" y="40.5" width="30" height="2.3"/>
+        <rect x="16" y="49.5" width="63.5" height="2.3"/>
+        <rect x="17" y="58.5" width="63.5" height="2.3"/>
+        <rect x="41" y="71.5" width="15" height="2.3"/>
+        <rect x="14.5" y="86" width="64" height="2.3"/>
+      </svg>
+    </div>
+  </div>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
