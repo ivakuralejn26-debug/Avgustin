@@ -111,18 +111,24 @@ h2 {
 .bio p { margin: 0 0 1em; text-indent: 1.6em; }
 .bio:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 
-/* кнопки: компактные */
-.btns { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--line); min-height: 0; }
+/* кнопки: в три раза меньше прежних, стоят в центре своей строки */
+.btns {
+  display: flex; align-items: center; justify-content: center;
+  gap: var(--line); min-height: 0;
+}
 .btns button {
-  font: inherit; font-weight: 700; font-size: clamp(1.1rem, 2.4vw, 2.6rem);
+  font: inherit; font-weight: 700;
+  width: clamp(40px, 4.6vw, 72px);
+  height: clamp(28px, 4.2vh, 48px);
+  font-size: clamp(.35rem, .8vw, .9rem); line-height: 1;
   color: var(--text); border: 0; border-radius: 0; cursor: pointer; padding: 0;
   background: var(--grain), var(--bg);
-  box-shadow: inset 0 0 0 4px var(--bg), inset 0 0 0 5px rgba(101,93,82,.55);
+  box-shadow: inset 0 0 0 2px var(--bg), inset 0 0 0 3px rgba(101,93,82,.55);
   transition: background-color .2s, color .2s;
 }
 .btns button:hover,
 .btns button[aria-current="true"] { background: var(--accent); color: var(--bg); }
-.btns button:focus-visible { outline: 3px solid var(--text); outline-offset: -8px; }
+.btns button:focus-visible { outline: 2px solid var(--text); outline-offset: -4px; }
 
 /* фото: приглушаем под палитру */
 .ph::before {
